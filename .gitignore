@@ -16,6 +16,6 @@
 .prettierignore
 
 # Files not needed for deployment
-init_README
-README-template
-style-guide
+init_README.md
+README-template.md
+style-guide.md
