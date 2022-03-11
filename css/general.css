@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+/* FIXME Change styles */
+:root {
+  --clr-light-grey: #eee;
+  --clr-grey: #777;
+  --clr-accent: hsl(26, 100%, 55%);
+}
+
+/* FIXME Change styles */
+html {
+  font-family: sans-serif;
+}
+
+.container-nav {
+  max-width: 81rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.container-main {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.header {
+  border-bottom: 2px solid var(--clr-light-grey);
+  list-style: none;
+  padding: 1rem 0;
+  margin-bottom: 4rem;
+}
+
+.header-nav > ul {
+  list-style: none;
+  align-items: center;
+}
+
+/* SECTION Nav */
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+}
+
+.customer-nav {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.profile-pic--sml {
+  width: 4rem;
+  height: 4rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: var(--clr-grey);
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  /* FIXME add styles */
+}
+
+/* SECTION Headings */
+.tertiary-heading {
+  font-size: 1em;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: 1.2rem;
+}

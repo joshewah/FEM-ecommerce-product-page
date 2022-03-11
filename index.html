@@ -1,44 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/product-page.css" />
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+    <title>Sneakers</title>
+  </head>
+  <body>
+    <header class="header container-nav">
+      <nav class="header-nav">
+        <ul class="main-nav">
+          <li class="main-nav--link">
+            <a href="#"
+              ><img src="images/logo.svg" alt="Sneakers company logo"
+            /></a>
+          </li>
+          <li><a href="#" class="main-nav-link">Men</a></li>
+          <li><a href="#" class="main-nav-link">Collections</a></li>
+          <li><a href="#" class="main-nav-link">About</a></li>
+          <li><a href="#" class="main-nav-link">Women</a></li>
+          <li><a href="#" class="main-nav-link">Contanct</a></li>
+        </ul>
+        <ul class="customer-nav">
+          <li class="main-nav--link btn-cart">
+            <a href="#"
+              ><img
+                src="images/icon-cart.svg"
+                alt="Logo for the customers cart"
+            /></a>
+          </li>
+          <li class="main-nav--link btn-profile">
+            <a href="#">
+              <img
+                src="images/image-avatar.png"
+                alt="Image of the customers profile picture"
+                class="profile-pic--sml"
+              />
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <main class="page--product container-main">
+      <aside >
+        <img
+          src="images/image-product-1.jpg"
+          alt="Image of the product (shoe)"
+          class="product-img"
+        />
+      </aside>
+      <article class="product--text-box">
+        <h4 class="tertiary-heading">Shoe</h4>
+        <p class="product-title">Fall Limitied Edition Sneakers</p>
+        <p class="product-description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, officiis magni voluptas maxime sapiente consequatur atque repellat molestias suscipit ab doloremque veniam assumenda dolores. Voluptates vel numquam necessitatibus odit illum quaerat fugit. Voluptatem rerum explicabo non itaque ipsum veniam repellendus.
+        </p>
+        <div class="price-details">
+          <p class="price-current">$125.00</p>
+          <p class="price-saving">50%</p>
+        </div>
+        <!-- NOTE only if there is saving present -->
+        <p class="price-initial">$250.00</p>
+        <div class="add-to-cart--section">
+          <div class="cart-items-toggle">
+            <button class="btn-toggle btn--cart-minus">
+              <img src="images/icon-minus.svg" alt="Image of a minus icon" />
+            </button>
+            <span class="items-to-add">0</span>
+            <button class="btn-toggle btn--cart-add">
+              <img src="images/icon-plus.svg" alt="Image of a plus icon" />
+            </button>
+          </div>
+          <button class="btn--add-to-cart">
+            <img src="images/icon-cart.svg" alt="Image of a shopping cart" 
+            class="btn--add-to-cart-img"/>
+            <p class="add-to-cart--text">Add to cart</p>
+          </button>
+        </div>
+      </main>
+    </article>
+    </body>
 </html>
